@@ -43,6 +43,10 @@ public class RetailTrainer extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
+
+
+
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -84,17 +88,14 @@ public class RetailTrainer extends AppCompatActivity
         if (id == R.id.nav_overview) {
 
             // Handle the camera action
-            TextView showOverview = (TextView)findViewById(R.id.txtViewDetails);
-            showOverview.setText("Overview");
+
         } else if (id == R.id.nav_lookup) {
 
-            TextView showLookup = (TextView)findViewById(R.id.txtViewDetails);
-            showLookup.setText("Customer Lookup and Edit");
+
 
         } else if (id == R.id.nav_customerList) {
 
-            TextView showList = (TextView)findViewById(R.id.txtViewDetails);
-            showList.setText("Customer List");
+
 
         } else if (id == R.id.nav_customerSummary) {
 
