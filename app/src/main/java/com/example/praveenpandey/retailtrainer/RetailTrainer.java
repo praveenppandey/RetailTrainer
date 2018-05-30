@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class RetailTrainer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -80,17 +81,29 @@ public class RetailTrainer extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_overview) {
+
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+            TextView showOverview = (TextView)findViewById(R.id.txtViewDetails);
+            showOverview.setText("Overview");
+        } else if (id == R.id.nav_lookup) {
 
-        } else if (id == R.id.nav_slideshow) {
+            TextView showLookup = (TextView)findViewById(R.id.txtViewDetails);
+            showLookup.setText("Customer Lookup and Edit");
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_customerList) {
 
-        } else if (id == R.id.nav_share) {
+            TextView showList = (TextView)findViewById(R.id.txtViewDetails);
+            showList.setText("Customer List");
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_customerSummary) {
+
+        } else if (id == R.id.nav_dashboard) {
+
+        } else if (id == R.id.nav_record) {
+
+        }
+        else if (id == R.id.nav_validation) {
 
         }
 
@@ -98,4 +111,6 @@ public class RetailTrainer extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }

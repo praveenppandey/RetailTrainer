@@ -5,21 +5,34 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_overview"
+            android:icon="@drawable/ic_menu_overview"
+            android:title="Overview"
+            />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_lookup"
+            android:icon="@drawable/ic_menu_lookup"
+            android:title="Customer Lookup/Edit" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_customerList"
+            android:icon="@drawable/ic_menu_customer_list"
+            android:title="Customer List" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_customerSummary"
+            android:icon="@drawable/ic_menu_summary"
+            android:title="Customer Summary Window" />
+        <item
+            android:id="@+id/nav_dashboard"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Customer Dashboard" />
+        <item
+            android:id="@+id/nav_record"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Edit/View Customer Record" />
+        <item
+            android:id="@+id/nav_validation"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Customer Validation" />
     </group>
 
     <item android:title="Communicate">
