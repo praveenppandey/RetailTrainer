@@ -87,7 +87,7 @@ public class RetailTrainer extends AppCompatActivity
 
         if (id == R.id.nav_overview) {
 
-            // Handle the camera action
+            // To handle overview setion
 
         } else if (id == R.id.nav_lookup) {
 
